@@ -24,4 +24,4 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     - name: Push Docker Image
-      run: docker push asiron/cs-333-final
+      run: docker push asiron1/cs-333-final
