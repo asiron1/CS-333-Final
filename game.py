@@ -2,7 +2,7 @@ from board import Board
 from player import Player
 
 def play_game(gridSize=10, numBombs=10):
-    print("demo video")
+    print("demo video 3")
     while True:
         board = Board(gridSize, numBombs)
         player = Player()
