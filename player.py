@@ -1,5 +1,3 @@
-import re
-
 class Player:
     def get_input(self):
         while True:
@@ -9,3 +7,6 @@ class Player:
                 return row, col
             except ValueError:
                 print("Invalid input. Please provide row and column numbers separated by a comma.")
+            except IndexError:
+                print("Invalid input. Please provide valid row and column numbers.")
+
