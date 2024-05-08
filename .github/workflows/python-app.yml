@@ -40,11 +40,3 @@ jobs:
         pytest TestGame.py
         pytest TestPlayer.py
         pytest TestIntegration.py
-    - name: Build Docker image
-      run: |
-        docker build -t minesweeper .
-    - name: Push Docker image to Docker Hub
-      run: |
-        echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u asiron1 --password-stdin
-        docker tag minesweeper asiron1/minesweeperD:latest
-        docker push asiron1/minesweeperD:latest
